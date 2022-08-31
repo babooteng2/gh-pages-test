@@ -6,7 +6,7 @@ const Router = () => useRoutes(routeData);
 
 const App = () => {
   return (
-    <Routes>
+    <Routes basename={process.env.PUBLIC_URL}>
       <Router />
     </Routes>
   );
